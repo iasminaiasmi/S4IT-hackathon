@@ -156,14 +156,12 @@ if df.empty:
 #   best_pm25      = the min PM2.5 reading
 #   best_station   = the station name where best_pm25 occurred
 
-# === TODO 2 — YOUR CODE HERE ===
-# (delete these placeholders and write the real lines)
-avg_pm25 = 0
-sensor_count = 0
-worst_pm25 = 0
-worst_station = "TODO"
-best_pm25 = 0
-best_station = "TODO"
+avg_pm25 = round(df["pm25"].mean(), 1)
+sensor_count = len(df)
+worst_pm25 = df["pm25"].max()
+worst_station = df.loc[df["pm25"].idxmax(), "station"]
+best_pm25 = df["pm25"].min()
+best_station = df.loc[df["pm25"].idxmin(), "station"]
 
 
 # ------------------------------------------------------------------------------
