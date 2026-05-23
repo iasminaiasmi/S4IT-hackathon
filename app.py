@@ -176,13 +176,7 @@ sensor_count = len(df)
 worst_pm25 = df["pm25"].max()
 worst_station = df.loc[df["pm25"].idxmax(), "station"]
 best_pm25 = df["pm25"].min()
-best_station = df.loc[df["pm25"].idxmin(), "station"]avg_pm25 = round(df["pm25"].mean(), 1)
-sensor_count = len(df)
-worst_pm25 = df["pm25"].max()
-worst_station = df.loc[df["pm25"].idxmax(), "station"]
-best_pm25 = df["pm25"].min()
 best_station = df.loc[df["pm25"].idxmin(), "station"]
-
 
 
 # ------------------------------------------------------------------------------
