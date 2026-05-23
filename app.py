@@ -284,11 +284,7 @@ m = folium.Map(
 #   [row["lat"], row["lon"], row["pm25"]] for each row in df
 
 # === TODO 4 — YOUR CODE HERE ===
-heat_data = [
-[row["lat"], row["lon"], row["pm25"]]
-for _, row in df.iterrows()
-]
-
+heat_data = []  # ← replace with the list comprehension
 
 
 # Color gradient for the heatmap (already done for you)
