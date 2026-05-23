@@ -405,8 +405,8 @@ elif avg_pm25 < 150:
      detailed_message = "Unhealthy. Postpone exercise. Wear an N95."
 else:
       verdict_emoji = " "; verdict_text = "STAY INDOORS"
-     verdict_color = "#7e22ce"
-     detailed_message = "Hazardous. Stay inside, close windows."
+      verdict_color = "#7e22ce"
+      detailed_message = "Hazardous. Stay inside, close windows."
 
 
 # ------------------------------------------------------------------------------
